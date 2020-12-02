@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/dc00c8a55b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="styles/style.css">
     <title>Drum Machine</title>
 </head>
 <body>
-    <div id='drum-machine'>
-        <div id='display' class='row'>
-            <button id='Q' class='btn btn-primary drum-btns col-sm-4'>Q</button>
-            <button id='W' class='btn btn-primary drum-btns col-sm-4'>W</button>
-            <button id='E' class='btn btn-primary drum-btns col-sm-4'>E</button>
-            <button id='A' class='btn btn-primary drum-btns col-sm-4'>A</button>
-            <button id='S' class='btn btn-primary drum-btns col-sm-4'>S</button>
-            <button id='D' class='btn btn-primary drum-btns col-sm-4'>D</button>
-            <button id='Z' class='btn btn-primary drum-btns col-sm-4'>Z</button>
-            <button id='X' class='btn btn-primary drum-btns col-sm-4'>X</button>
-            <button id='C' class='btn btn-primary drum-btns col-sm-4'>C</button>
-            
-        </div>
+    <div id='drum-machine' class='row'>
+            <h1 class="text-center col-sm-12" >Kickin Cool Drum Pads</h1>
+            <p id='display' class= "text-center col-sm-12"></p>    
+            <button id='padQ' class='drum-pad col-sm-4' onclick="prePlay('Q')"><audio id='Q' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</button>
+            <button id='padW' class='drum-pad col-sm-4' onclick="prePlay('W')"><audio id='W' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>W</button>
+            <button id='padE' class='drum-pad col-sm-4' onclick="prePlay('E')"><audio id='E' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>E</button>
+            <button id='padA' class='drum-pad col-sm-4' onclick="prePlay('A')"><audio id='A' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>A</button>
+            <button id='padS' class='drum-pad col-sm-4' onclick="prePlay('S')"><audio id='S' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>S</button>
+            <button id='padD' class='drum-pad col-sm-4' onclick="prePlay('D')"><audio id='D' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>D</button>
+            <button id='padZ' class='drum-pad col-sm-4' onclick="prePlay('Z')"><audio id='Z' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>Z</button>
+            <button id='padX' class='drum-pad col-sm-4' onclick="prePlay('X')"><audio id='X' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>X</button>
+            <button id='padC' class='drum-pad col-sm-4' onclick="prePlay('C')"><audio id='C' class='clip' preload src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>C</button>
+        
     </div>
     <script src="scripts/script.js"></script>
 </body>
