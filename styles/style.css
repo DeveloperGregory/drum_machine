@@ -1,0 +1,11 @@
+.drum-btns{
+    padding: 15px;
+}
+
+#display{
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 50%;
+}
